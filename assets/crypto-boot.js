@@ -25,6 +25,7 @@
     document.body.classList.add("unlocked");
     window.scrollTo(0, 0);
     wireSignout();
+    try { document.dispatchEvent(new CustomEvent("wwi:revealed")); } catch (e) {}
   }
   async function decryptWith(key){
     var pt = await crypto.subtle.decrypt({ name:"AES-GCM", iv:b64dec(B.iv) }, key, b64dec(B.ct));
