@@ -174,4 +174,23 @@ a{color:var(--teal-d)}
   .prow .open{margin-top:4px}
   .row2{grid-template-columns:1fr}
   .mug{flex:0 0 100%}.mugbox{height:200px}
+  /* dossier: stop the case-file layout from overflowing / clipping descriptions */
+  .dbody{padding:12px 13px}
+  .dossier .fhead{padding:10px 12px}
+  .dossier .fhead .t1{font-size:13px;letter-spacing:1px}
+  .dossier .fhead .t2{font-size:7px;letter-spacing:.2px}
+  .dossier .cls{font-size:7.5px;letter-spacing:1.4px}
+  .dossier h3{letter-spacing:1.2px}
+  .grid .k{white-space:normal}
+  .grid .v,.kv,.kv .val,.notes,.elog td,.dossier .fhead .t2{overflow-wrap:anywhere;word-break:break-word}
+  .sec.row2{display:grid;grid-template-columns:1fr;gap:14px}
+  .statuswrap{flex-direction:column}
+  .statuswrap .col{min-width:0}
+  .part{min-width:0}
+  .dossier *{min-width:0}
+  .grid{grid-template-columns:58px 1fr}
+  .elog{table-layout:fixed}
+  .dossier .dbody{font-size:11px}
+  .notes,.kv,.grid .v,.grid .k,.elog td,.elog th{font-size:10.5px}
 }
+html,body{overflow-x:hidden}
